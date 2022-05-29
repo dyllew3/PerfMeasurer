@@ -1,0 +1,14 @@
+name: "Hello World"
+address: 'https://dylan.example.com/'
+headers:
+  test: "this"
+  "hello world": "Balh"
+num_requests: 100
+endpoints:
+  - url: "/walk/away"
+    timeout: 100
+    method: "GET"
+  - url: "/something"
+    body: ""
+  - url: "/test"
+    method: "POST"
