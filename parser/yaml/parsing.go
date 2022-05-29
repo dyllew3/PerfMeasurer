@@ -18,5 +18,5 @@ func Parse(filename string) (parser.RequestsFile, error) {
 		return result, err
 	}
 	err = yaml.Unmarshal(bytes, &result)
-	return resut, err
+	return result, err
 }
