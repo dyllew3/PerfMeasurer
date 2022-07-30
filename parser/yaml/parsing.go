@@ -1,10 +1,11 @@
 package yaml_handler
 
 import (
+	"fmt"
 	"log"
 	"os"
 
-	parser "github.com/dyllew3/PerfMeasurer/parser"
+	"github.com/dyllew3/PerfMeasurer/parser"
 	"gopkg.in/yaml.v3"
 )
 
@@ -18,5 +19,14 @@ func Parse(filename string) (parser.RequestsFile, error) {
 		return result, err
 	}
 	err = yaml.Unmarshal(bytes, &result)
+
+	if err != nil {
+		return result, err
+	}
+
+	if parser.VerifyRequestFileObject(result) {
+		return result, err
+	}
+	err = fmt.Errorf("invalid file")
 	return result, err
 }

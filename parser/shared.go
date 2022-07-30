@@ -19,4 +19,5 @@ type Endpoint struct {
 	UrlParams   *map[string]string `yaml:"url_params" json:"url_params"`
 	Timeout     *int32             `yaml:"timeout" json:"timeout"`
 	NumRequests *int64             `yaml:"num_requests" json:"num_requests"`
+	Headers     *map[string]string `yaml:"headers" json:"headers"`
 }

@@ -1,0 +1,9 @@
+name: "Hello World"
+address: 'https://patch.ie/'
+num_requests: 100
+endpoints:
+  - url: "/2022/05/29/daa.html"
+    timeout: 100
+    method: "GET"
+  - url: "/2021/08/10/happy.html"
+    method: "GET"
