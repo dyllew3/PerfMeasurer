@@ -5,10 +5,11 @@ package parser
 type RequestsFile struct {
 	Name                 string            `yaml:"name" json:"name"`
 	ReportOutputFilename *string           `yaml:"output_name" json:"output_name"`
-	Address              string            `yaml:"address" json:"address"`
+	Address              string            `yaml:"host" json:"host"`
 	Headers              map[string]string `yaml:"headers" json:"headers"`
 	Endpoints            []Endpoint        `yaml:"endpoints" json:"endpoints"`
 	NumRequests          *int64            `yaml:"num_requests" json:"num_requests"`
+	FollowRobots         *bool             `yaml:"follow_robots" json:"follow_robots"`
 }
 
 type Endpoint struct {

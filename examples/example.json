@@ -1,6 +1,6 @@
 {
     "name": "Hello World",
-    "address": "https://dylan.example.com/",
+    "host": "https://dylan.example.com/",
     "headers": {
         "test": "this",
         "hello world": "Balh"

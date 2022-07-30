@@ -242,7 +242,7 @@ func findRule(path string, rules []Rule) *Rule {
 	return matchedRule
 }
 
-//
+// Get rule that would apply to the given url and user agent
 func (r Robot) GetRule(urlStr string, ua string) (*Rule, error) {
 	parsedUrl, err := url.Parse(urlStr)
 	if ua == "" {
